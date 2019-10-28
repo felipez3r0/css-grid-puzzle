@@ -49,6 +49,10 @@ html, body{
     width:480px;
 }
 
+a{
+    color:#EEE;
+}
+
 @media(max-width:1030px){
     .container{
         grid-template-columns: 1fr;
