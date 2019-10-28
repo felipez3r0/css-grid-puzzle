@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Playing with CSS Grids</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="puzzle">
+            <h1>Puzzle time!</h1>
+            <p>Using CSS Grid Layout put the pieces in the correct order.</p>
+            <hr>
+            <div class="game">
+                <div class="piece p1"></div>
+                <div class="piece p2"></div>
+                <div class="piece p3"></div>
+                <div class="piece p4"></div>
+                <div class="piece p5"></div>
+                <div class="piece p6"></div>
+                <div class="piece p7"></div>
+                <div class="piece p8"></div>
+                <div class="piece p9"></div>
+            </div>
+        </div>
+        <div class="code">
+            <h2>CSS Code</h2>
+            <style id="codeEditor" contenteditable>
+.game{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+}
+            </style>
+            <hr>
+            <button id="solve">Solve it!</button>
+            <button id="solveTwo">Solve it (another option)!</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

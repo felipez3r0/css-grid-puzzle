@@ -1,0 +1,68 @@
+html, body{
+    background-color: #333;
+    color: #EEE;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    width: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    column-gap: 20px;
+}
+
+.container style {
+    display: block;
+    background: #444;
+    color: white;
+    font-size: 16px;
+    padding: 5px 5%;
+    white-space: pre;
+    border:2px solid #888;
+    width: 90%;
+    overflow: auto;
+}
+
+.piece{
+    border:1px solid #FFF;
+    min-height: 158px;
+    width: 100%;
+    background-image: url('firefoxlogo.png');
+}
+
+.p1{ background-position: top right; }
+.p2{ background-position: top left; }
+.p3{ background-position: bottom center; }
+.p4{ background-position: bottom right; }
+.p5{ background-position: center center; }
+.p6{ background-position: top center; }
+.p7{ background-position: bottom left; }
+.p8{ background-position: center right; }
+.p9{ background-position: center left; }
+
+.game{
+    margin:0 auto;
+    width:480px;
+}
+
+@media(max-width:1030px){
+    .container{
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }    
+}
+
+@media(max-width:520px){
+    .game{
+        width:334px;
+    }  
+    .piece{
+        min-height: 110px;
+        width: 110px;
+        background-size: 300%;
+    }
+}
